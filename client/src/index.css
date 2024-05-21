@@ -2,6 +2,9 @@
   box-sizing: border-box;
   font-family: "Teachers", sans-serif;
   font-optical-sizing: auto;
+  padding: 0;
+  margin: 0;
+  transition: .3s all;
 }
 body{
   background-color: rgb(231, 231, 231);
@@ -143,4 +146,5 @@ body{
   .header{
     height: 100vh;
   }
+
 }

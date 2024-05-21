@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import NoveltyLink from "./NoveltyLink";
 import { useState, useEffect } from "react";
 import { getNovelties } from "../../models/Novelty";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export default function NoveltyList() {
   const [novelties, setNovelties] = useState();
@@ -38,6 +40,7 @@ export default function NoveltyList() {
 
   return (
     <>
+    <Header></Header>
       <h1>Novelty list</h1>
       {
         novelties.map((novelty, index) => (
@@ -47,6 +50,7 @@ export default function NoveltyList() {
       <Link to={"/"}>
         <p>Go back</p>
       </Link>
+      <Footer></Footer>
     </>
   );
 }

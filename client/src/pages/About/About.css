@@ -1,0 +1,33 @@
+.about-section{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.about-us{
+    font-size: 20px;
+    width: 50%;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-title{
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    font-weight: 500;
+}
+.about-title div{
+    width: 100%;
+}
+@media (max-width: 1300px){
+    .about{
+        flex-direction: column;
+    }
+}

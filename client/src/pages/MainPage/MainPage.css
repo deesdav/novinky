@@ -1,32 +1,35 @@
-.container{
+.container {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.create-btn{
+
+.create-btn {
     display: block;
     font-weight: 500;
     font-size: 30px;
-    color:black;
+    color: black;
     padding: 2px 5px;
     background-color: white;
     max-width: 300px;
     text-align: center;
     transition: 0.3s;
-    border:3px solid white;
+    border: 3px solid white;
     border-radius: 15px;
     margin: 30px;
-    margin-top:100px;
+    margin-top: 100px;
 }
-.create-btn:hover{
+
+.create-btn:hover {
     border: 3px solid white;
     background-color: black;
     color: white;
     border-radius: 0px;
 }
-.recent-novelties{
+
+.recent-novelties {
     margin-top: 40px;
     width: 90%;
     height: auto;
@@ -36,26 +39,31 @@
     align-items: center;
     padding-bottom: 50px;
 }
-.recent-title{
+
+.recent-title {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.last-blogs-title{
+
+.last-blogs-title {
     font-size: 80px;
     font-weight: 500;
     text-align: center;
 }
-.news-icon{
+
+.news-icon {
     width: 35%;
     margin-bottom: 50px;
 }
-.novelties{
+
+.novelties {
     width: 50%;
 }
-.one-novelty{
+
+.one-novelty {
     padding: 3px;
     margin: 30px 20px;
     width: 100%;
@@ -64,22 +72,26 @@
     border-radius: 15px;
     transition: 0.3s;
 }
-.one-novelty:hover{
+
+.one-novelty:hover {
     transform: scale(1.005);
 }
-.one-novelty h2{
+
+.one-novelty h2 {
     text-align: center;
 }
-.no-news{
+
+.no-news {
     font-size: 50px;
     color: red;
     font-weight: 500;
 }
-.blog-img{
-    color:white;
+
+.blog-img {
+    color: white;
     overflow: hidden;
     font-size: 30px;
-    border:3px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
     background-color: black;
     width: 200px;
     height: 200px;
@@ -89,54 +101,64 @@
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.blog-img:hover{
+
+.blog-img:hover {
     transform: scale(1.05);
 }
-.blog-img img{
+
+.blog-img img {
     width: 100%;
     height: auto;
 }
-.blog-content{
+
+.blog-content {
     display: flex;
     justify-content: space-between;
     margin: 10px 50px;
 }
-.blog-content p{
+
+.blog-content p {
     width: 75%;
 }
-.author-and-date{
+
+.author-and-date {
     display: flex;
     justify-content: space-between;
 }
-.author-and-date p{
+
+.author-and-date p {
     margin: 10px 30px;
 }
-.btn-all-novelties{
+
+.btn-all-novelties {
     display: block;
     font-weight: 500;
     font-size: 15px;
-    color:white;
+    color: white;
     padding: 2px 5px;
     background-color: rgb(71, 71, 255);
     max-width: 300px;
     text-align: center;
     transition: 0.3s;
-    border:3px solid rgb(71, 71, 255);
+    border: 3px solid rgb(71, 71, 255);
     border-radius: 15px;
 }
-.btn-all-novelties:hover{
+
+.btn-all-novelties:hover {
     border-radius: 5px;
     background-color: rgb(157, 157, 255);
-    border:3px solid rgb(157, 157, 255);
+    border: 3px solid rgb(157, 157, 255);
     display: block;
-    float:right;
+    float: right;
 }
-.effect{
+
+.effect {
     width: 100%;
     margin-top: -1100px;
     z-index: -5;
 }
-.black-section{
+
+.black-section {
     background-color: black;
     height: fit-content;
     width: 100%;
@@ -146,104 +168,162 @@
     justify-content: space-around;
     padding: 100px 150px;
 }
-.create-title{
-    color:white;
+
+.create-title {
+    color: white;
     font-size: 60px;
 }
-.create-decription{
-    color:white;
+
+.create-decription {
+    color: white;
     font-size: 20px;
 }
+
 @media (max-width: 1900px) {
-    .recent-novelties{
+    .recent-novelties {
         margin-bottom: 200px;
     }
 }
+
 @media (max-width: 1700px) {
-    .recent-novelties{
+    .recent-novelties {
         width: 80%;
     }
-    .one-novelty{
+
+    .one-novelty {
         margin: 10px 0;
     }
-    .recent-novelties{
+
+    .recent-novelties {
         margin-bottom: 400px;
     }
 }
+
 @media (max-width: 1500px) {
     .last-blogs-title {
         font-size: 50px;
     }
-    .novelties{
+
+    .novelties {
         width: 90%;
     }
+
     .news-icon {
         width: 40%;
         margin: 0 0 30px 0;
     }
+
     .recent-novelties {
         flex-direction: column;
         margin-bottom: 600px;
     }
-    .btn-all-novelties{
+
+    .btn-all-novelties {
         margin-bottom: 50px;
     }
-    .one-novelty{
+
+    .one-novelty {
         margin: 30px 0;
     }
-    .blog-content{
+
+    .blog-content {
         margin: 0 20px
     }
 }
+
 @media (max-width: 1300px) {
-    .novelties{
+    .novelties {
         width: 90%;
     }
-    .create-title{
+
+    .create-title {
         font-size: 40px;
         margin-left: -100px;
     }
-    .create-decription{
+
+    .create-decription {
         font-size: 20px;
         margin-left: -100px;
     }
-    .create-btn{
+
+    .create-btn {
         margin-right: -100px;
         font-size: 20px;
         padding: 3px 20px;
     }
 }
+
 @media (max-width: 1000px) {
-    .novelties{
+    .novelties {
         margin-bottom: 200px;
     }
 }
+
 @media (max-width: 600px) {
-    .black-section{
+    .black-section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .blog-img{
+
+    .blog-img {
         display: none;
     }
-    .blog-content{
+
+    .blog-content {
         width: fit-content;
         margin: 20px 20px;
         display: block;
     }
-    .blog-content p{
+
+    .blog-content p {
         width: 100%;
         margin: 0;
     }
-    .one-novelty{
+
+    .one-novelty {
         margin: 20px 0;
     }
-    .recent-novelties{
+
+    .recent-novelties {
         width: 90%;
         margin-bottom: 800px;
     }
-    .novelties{
+
+    .novelties {
         width: 100%;
     }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.footer ul {
+    list-style-type: none;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.footer ul li {
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+
+.footer a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }

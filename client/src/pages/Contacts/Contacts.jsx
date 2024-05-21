@@ -21,7 +21,9 @@ export default function Contacts() {
               draggable="false"
             />
           </div>
-          <div className="novelties">djogasg</div>
+          <div className="novelties">
+            <div className="one-novelty">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ad sunt, asperiores error autem aperiam tempore, quod voluptatem totam, aspernatur debitis magni quo ab ex nisi tempora fuga deleniti facere.</div>
+          </div>
         </div>
 
 
