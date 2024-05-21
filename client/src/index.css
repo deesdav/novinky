@@ -1,31 +1,32 @@
-*{
+* {
   box-sizing: border-box;
   font-family: "Teachers", sans-serif;
   font-optical-sizing: auto;
   padding: 0;
   margin: 0;
-  transition: .3s all;
+  transition: 0.3s all;
 }
-body{
-  background-color: rgb(231, 231, 231);
-  margin:0;
-}
-.main-name{
-  color:white;
+body {
+  background-color: rgb(255, 255, 255);
   margin: 0;
-  font-size:80px;
+}
+.main-name {
+  color: white;
+  margin: 0;
+  font-size: 80px;
   text-align: center;
 }
-.no-underline{
+.no-underline {
   text-decoration: none;
   display: block;
 }
-.header{
+.header {
   min-height: 75vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),url(./img/spsmb.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url(./img/spsmb.png);
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   position: relative;
   margin: 0;
   display: flex;
@@ -34,117 +35,119 @@ body{
   align-items: center;
   border-bottom: 10px solid rgb(192, 192, 255);
 }
-.header p{
-  color:white;
-  margin:5px;
+.header p {
+  color: white;
+  margin: 5px;
 }
-.header span{
-  color:rgb(157, 157, 255);
+.header span {
+  color: rgb(157, 157, 255);
 }
-.main-description{
+.main-description {
   text-align: center;
 }
-.navigator{
+.navigator {
   width: 30%;
   position: absolute;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top:20px
+  margin-top: 20px;
 }
-.navigator p{
+.navigator p {
   font-size: 30px;
   cursor: pointer;
   transition: 0.2s;
 }
-.navigator p:hover{
-  color:rgb(157, 157, 255);
+.navigator p:hover {
+  color: rgb(157, 157, 255);
   text-shadow: 5px 5px 5px #000000;
 }
-.spsmb-logo{
+.spsmb-logo {
   width: 5%;
   position: absolute;
-  top:0;
-  left:0;
-  margin:50px;
+  top: 0;
+  left: 0;
+  margin: 50px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 0.3s;
   cursor: pointer;
 }
-.spsmb-logo:hover{
+.spsmb-logo:hover {
   transform: scale(1.05);
   box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
 }
-.newspaper-logo{
+.newspaper-logo {
   width: 10%;
   height: auto;
   z-index: 10;
 }
-.btn-whole-novelty{
-  border:2px solid black;
-  color:black;
+.btn-whole-novelty {
+  border: 2px solid rgb(0, 0, 0);
   font-weight: 500;
+  font-size: x-large;
   border-radius: 5px;
   transition: 0.2s;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
   width: fit-content;
+  height: auto;
   margin: 10px 50px;
   margin-bottom: 40px;
-  padding: 5px 20px;
+  text-align: center;
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
 }
-.btn-whole-novelty:hover{
+.btn-whole-novelty:hover {
   border-radius: 0;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
-.footer{
+.footer {
   background-color: rgb(157, 157, 255);
   padding: 40px;
   background-color: rgb(73, 73, 255);
-
 }
-.footer p{
+.footer p {
   color: white;
   font-size: 40px;
   font-weight: 500;
   margin: 0;
 }
 @media (max-width: 1600px) {
-  .spsmb-logo{
+  .spsmb-logo {
     width: 8%;
   }
-  .main-name{
-    font-size: 50px; 
+  .main-name {
+    font-size: 50px;
   }
   .navigator {
     width: 50%;
   }
 }
 @media (max-width: 800px) {
-  .spsmb-logo{
+  .spsmb-logo {
     width: 15%;
   }
-  .main-name{
+  .main-name {
     font-size: 40px;
   }
-  .navigator p{
+  .navigator p {
     font-size: 15px;
   }
-  .btn-whole-novelty{
-    padding: 2px 5px;
-    font-size: 13px;
-    margin: 20px 20px
+  .btn-whole-novelty {
+    font-size: 16px;
+    margin: 20px auto;
   }
 }
-@media (max-height: 400px){
-  .navigator p{
+@media (max-height: 400px) {
+  .navigator p {
     font-size: 25px;
   }
-  .header{
+  .header {
     height: 100vh;
   }
-
 }

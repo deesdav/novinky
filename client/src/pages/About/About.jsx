@@ -9,14 +9,17 @@ export default function About() {
     <>
       <Header></Header>
       <section className="about-section">
-          <div className="about">
-            <div>
-              <p className="about-title">O nás</p>
-            </div>
-              <p className="about-us">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, doloremque recusandae esse aut quod quos rem nesciunt quae illum maiores aspernatur sit tenetur qui deserunt harum tempora voluptas molestias cumque!
-              </p>
+        <div className="about">
+          <div>
+            <p className="about-title">O nás</p>
           </div>
+          <p className="about-us">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
+            doloremque recusandae esse aut quod quos rem nesciunt quae illum
+            maiores aspernatur sit tenetur qui deserunt harum tempora voluptas
+            molestias cumque!
+          </p>
+        </div>
       </section>
       <Footer></Footer>
     </>

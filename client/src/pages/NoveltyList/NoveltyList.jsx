@@ -16,7 +16,7 @@ export default function NoveltyList() {
       setNovelties(data.payload);
       setLoaded(true);
     }
-  }
+  };
 
   useEffect(() => {
     load();
@@ -27,7 +27,7 @@ export default function NoveltyList() {
       <>
         <p>Novelties not found</p>
       </>
-    )
+    );
   }
 
   if (!isLoaded) {
@@ -35,21 +35,24 @@ export default function NoveltyList() {
       <>
         <p>Novelties are loading...</p>
       </>
-    )
+    );
   }
 
   return (
     <>
-    <Header></Header>
-      <h1>Novelty list</h1>
-      {
-        novelties.map((novelty, index) => (
-          <NoveltyLink key={index} {...novelty} />
-        ))
-      }
-      <Link to={"/"}>
-        <p>Go back</p>
-      </Link>
+      <Header></Header>
+      <section className="noveltyList-section">
+        <div className="about">
+          <div>
+            <p className="noveltyList-title">Seznam Novinek:</p>
+          </div>
+          <div id="noveltyListContent">
+            {novelties.map((novelty, index) => (
+              <NoveltyLink key={index} {...novelty} />
+            ))}
+          </div>
+        </div>
+      </section>
       <Footer></Footer>
     </>
   );

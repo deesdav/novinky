@@ -1,6 +1,9 @@
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { getNovelty, deleteNovelty } from "../../models/Novelty";
 import { useState, useEffect } from "react";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import "./NoveltyView.css"
 
 export default function NoveltyView() {
   const { id } = useParams();
@@ -17,7 +20,7 @@ export default function NoveltyView() {
       setNovelty(data.payload);
       setLoaded(true);
     }
-  }
+  };
 
   useEffect(() => {
     load();
@@ -25,7 +28,7 @@ export default function NoveltyView() {
 
   const handleChange = (e) => {
     setFormData(e.target.value);
-  }
+  };
 
   const handleDelete = async (e) => {
     e.preventDefault();
@@ -39,14 +42,14 @@ export default function NoveltyView() {
     } else {
       setInfo("Wrong input!");
     }
-  }
+  };
 
   if (isLoaded === null) {
     return (
       <>
         <p>Novelty not found</p>
       </>
-    )
+    );
   }
 
   if (!isLoaded) {
@@ -54,29 +57,58 @@ export default function NoveltyView() {
       <>
         <p>Novelty is loading...</p>
       </>
-    )
+    );
   }
 
   return (
     <>
-      <h1>Novelty view</h1>
-      <p>{id}</p>
-      <p>{novelty.name}</p>
-      <p>{novelty.content}</p>
-      <p>{novelty.author}</p>
-      <p>{novelty.date}</p>
-      <img src={novelty.img} alt="Novelty" />
-      <form>
-        <input type="text" placeholder={novelty.name} onChange={handleChange} />
-        <button onClick={handleDelete}>Delete</button>
-        <p>{info}</p>
-      </form>
-      <Link to={`/updatenovelty/${id}`}>
-        <p>Update novelty</p>
-      </Link>
-      <Link to={"/"}>
-        <p>Go back</p>
-      </Link>
+      <Header></Header>
+      <section className="noveltyView-section">
+        <div className="noveltyView">
+          <div>
+            <p className="noveltyView-title">Novinka</p>
+          </div>
+          <p className="noveltyView-us">
+            <p>
+              <strong>ID: </strong>
+              {id}
+            </p>
+            <p>
+              <strong> Název: </strong>
+              {novelty.name}
+            </p>
+            <p>
+              <strong>Obsah:</strong>
+              {novelty.content}
+            </p>
+            <p>
+              <strong> Autor:</strong> {novelty.author}
+            </p>
+            <p>
+              {" "}
+              <strong>Datum vytvoření:</strong> {novelty.date}
+            </p>
+            <img src={novelty.img} alt="Novelty" />
+            <form>
+              <input
+                type="text"
+                placeholder={novelty.name}
+                onChange={handleChange}
+              />
+              <button onClick={handleDelete}>Delete</button>
+              <p>{info}</p>
+            </form>
+            <Link to={`/updatenovelty/${id}`}>
+              <p>Upravit Novinku</p>
+            </Link>
+            <Link to={"/"}>
+              <p>Jít zpět</p>
+            </Link>
+          </p>
+        </div>
+      </section>
+
+      <Footer></Footer>
     </>
   );
 }

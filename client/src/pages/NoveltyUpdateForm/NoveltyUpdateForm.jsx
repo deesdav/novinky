@@ -1,6 +1,9 @@
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { updateNovelty, getNovelty } from "../../models/Novelty";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import "./NoveltyUpdateForm.css"
 
 export default function NoveltyUpdateForm() {
   const { id } = useParams();
@@ -44,10 +47,10 @@ export default function NoveltyUpdateForm() {
     reader.onload = () => {
       setFormData({ ...formData, img: reader.result });
     };
-    reader.onerror = error => {
+    reader.onerror = (error) => {
       console.log("Error: ", error);
     };
-  }
+  };
 
   useEffect(() => {
     load();
@@ -71,39 +74,58 @@ export default function NoveltyUpdateForm() {
 
   return (
     <>
-      <h1>Novelty update form</h1>
-      <p>{id}</p>
-      <form>
-        <input
-          type="text"
-          defaultValue={novelty.name}
-          name="name"
-          required
-          placeholder="Enter novelty name"
-          onChange={(e) => handleChange(e)}
-        />
-        <input
-          type="text"
-          defaultValue={novelty.content}
-          name="content"
-          required
-          placeholder="Enter content"
-          onChange={(e) => handleChange(e)}
-        />
-        <input
-          type="text"
-          defaultValue={novelty.author}
-          name="author"
-          required
-          placeholder="Enter author"
-          onChange={(e) => handleChange(e)}
-        />
-        <input accept="image/*" type="file" name="img" required onChange={handleImageChange}/>
-        <button onClick={handlePost}>Update novelty</button>
-      </form>
-      <Link to={"/"}>
-        <p>Go back</p>
-      </Link>
+      <Header></Header>
+      <section className="noveltyUpdate-section">
+        <div className="noveltyUpdate">
+          <div>
+            <p className="noveltyUpdate-title">Upravení Novinky</p>
+          </div>
+          <p className="noveltyUpdate-us">
+            <p>
+              <strong>ID: </strong>
+              {id}
+            </p>
+            <form>
+              <input
+                type="text"
+                defaultValue={novelty.name}
+                name="name"
+                required
+                placeholder="Enter novelty name"
+                onChange={(e) => handleChange(e)}
+              />
+              <input
+                type="text"
+                defaultValue={novelty.content}
+                name="content"
+                required
+                placeholder="Enter content"
+                onChange={(e) => handleChange(e)}
+              />
+              <input
+                type="text"
+                defaultValue={novelty.author}
+                name="author"
+                required
+                placeholder="Enter author"
+                onChange={(e) => handleChange(e)}
+              />
+              <input
+                accept="image/*"
+                type="file"
+                name="img"
+                required
+                onChange={handleImageChange}
+              />
+              <button onClick={handlePost}>Upravit Novinku</button>
+            </form>
+            <Link to={"/"}>
+              <p>Jít zpět</p>
+            </Link>
+          </p>
+        </div>
+      </section>
+      <Footer></Footer>
     </>
   );
 }
