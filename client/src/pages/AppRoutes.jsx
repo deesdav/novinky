@@ -4,7 +4,6 @@ import NoveltyCreateForm from "./NoveltyCreateForm/NoveltyCreateForm";
 import NoveltyUpdateForm from "./NoveltyUpdateForm/NoveltyUpdateForm";
 import NoveltyView from "./NoveltyView/NoveltyView";
 import NoveltyList from "./NoveltyList/NoveltyList";
-import CreatedNovelty from "./NoveltyCreateForm/CreatedNovelty";
 import Contacts from "./Contacts/Contacts";
 import About from "./About/About";
  
@@ -18,7 +17,6 @@ export default function AppRoutes() {
           <Route path="/updatenovelty/:id" element={<NoveltyUpdateForm />} />
           <Route path="/novelty/:id" element={<NoveltyView />} />
           <Route path="/novelties" element={<NoveltyList />} />
-          <Route path="/creatednovelty/:id" element={<CreatedNovelty />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/about" element={<About />} />
         </Routes>

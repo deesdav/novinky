@@ -14,10 +14,11 @@ export default function About() {
             <p className="about-title">O nás</p>
           </div>
           <p className="about-us">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
-            doloremque recusandae esse aut quod quos rem nesciunt quae illum
-            maiores aspernatur sit tenetur qui deserunt harum tempora voluptas
-            molestias cumque!
+            Borci z průmyslovky, každou chvilku vydávají novinky, nejčastěji z
+            třídy třetího ročníku! Proč? Protože bagr, nevim. Vždy, když je
+            aktivní novinka, dozvíte se hned v úvodu. Rozhodli jsme se založit
+            novinky, protože nás baví dávat vám informace ohledně průběhu na
+            Střední Průmyslové škole Mladá Boleslav.
           </p>
         </div>
       </section>

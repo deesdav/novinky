@@ -1,4 +1,4 @@
-.noveltyUpdate-section {
+.noveltyCreate-section {
   width: 100%;
   height: auto;
   display: flex;
@@ -7,23 +7,23 @@
   align-items: center;
   padding: 200px;
 }
-.noveltyUpdate-us {
+.noveltyCreate-us {
   font-size: 20px;
   width: 50%;
 }
-.noveltyUpdate {
+.noveltyCreate {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-.noveltyUpdate-title {
+.noveltyCreate-title {
   text-align: center;
   width: 100%;
   font-size: 50px;
   font-weight: 500;
 }
-.noveltyUpdate-title div {
+.noveltyCreate-title div {
   width: 100%;
 }
 input {
@@ -53,17 +53,17 @@ button:hover {
   transform: scale(0.9);
 }
 @media (max-width: 1300px) {
-  .noveltyUpdate {
+  .noveltyCreate {
     flex-direction: column;
   }
-  .noveltyUpdate-title {
+  .noveltyCreate-title {
     text-align: center;
     width: 100%;
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 20px;
   }
-  .noveltyUpdate-us {
+  .noveltyCreate-us {
     width: 100%;
   }
   textarea {

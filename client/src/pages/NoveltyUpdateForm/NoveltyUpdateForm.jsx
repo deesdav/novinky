@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { updateNovelty, getNovelty } from "../../models/Novelty";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import "./NoveltyUpdateForm.css"
+import "./NoveltyUpdateForm.css";
 
 export default function NoveltyUpdateForm() {
   const { id } = useParams();
@@ -94,7 +94,7 @@ export default function NoveltyUpdateForm() {
                 placeholder="Enter novelty name"
                 onChange={(e) => handleChange(e)}
               />
-              <input
+              <textarea
                 type="text"
                 defaultValue={novelty.content}
                 name="content"
@@ -119,8 +119,8 @@ export default function NoveltyUpdateForm() {
               />
               <button onClick={handlePost}>Upravit Novinku</button>
             </form>
-            <Link to={"/"}>
-              <p>Jít zpět</p>
+            <Link className="no-underline" to={"/"}>
+              <p className="bckBtn">Jít zpět</p>
             </Link>
           </p>
         </div>

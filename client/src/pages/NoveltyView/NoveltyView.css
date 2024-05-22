@@ -49,4 +49,11 @@
     font-size: 15px;
     width: 100%;
   }
+  .noveltyView-us img {
+    box-shadow: 0 0 25px rgb(186, 186, 186);
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+  }
 }

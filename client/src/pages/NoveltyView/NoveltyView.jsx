@@ -98,11 +98,11 @@ export default function NoveltyView() {
               <button onClick={handleDelete}>Delete</button>
               <p>{info}</p>
             </form>
-            <Link to={`/updatenovelty/${id}`}>
-              <p>Upravit Novinku</p>
+            <Link className="no-underline" to={`/updatenovelty/${id}`}>
+              <p className="bckBtn" >Upravit Novinku</p>
             </Link>
-            <Link to={"/"}>
-              <p>Jít zpět</p>
+            <Link className="no-underline" to={"/"}>
+              <p className="bckBtn">Jít zpět</p>
             </Link>
           </p>
         </div>

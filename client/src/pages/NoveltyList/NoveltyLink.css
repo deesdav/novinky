@@ -35,6 +35,16 @@
   padding: 1em;
   background-color: rgb(255, 255, 255);
 }
+
+#noveltyListContent .novelties{
+  display: grid;
+  grid-template-columns: auto auto ;
+  width: fit-content;
+  height: auto;
+  padding: 1em;
+  gap: 100px;
+  background-color: rgb(255, 255, 255);
+}
 @media (max-width: 1300px) {
   .about {
     flex-direction: column;
@@ -42,5 +52,10 @@
   #noveltyListContent {
     display: grid;
     grid-template-columns: auto;
+  }
+  #noveltyListContent .novelties{
+    display: grid;
+    grid-template-columns: auto;
+
   }
 }

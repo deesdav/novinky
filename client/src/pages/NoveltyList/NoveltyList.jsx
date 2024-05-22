@@ -9,47 +9,58 @@ export default function NoveltyList() {
   const [novelties, setNovelties] = useState();
   const [isLoaded, setLoaded] = useState(false);
 
-  const load = async () => {
-    const data = await getNovelties();
-    if (data.status === 500 || data.status === 404) return setLoaded(null);
-    if (data.status === 200) {
-      setNovelties(data.payload);
-      setLoaded(true);
-    }
-  };
+  const [noNews, setNoNews] = useState(true);
 
   useEffect(() => {
-    load();
+    const fetchNovelties = async () => {
+      const response = await getNovelties();
+      if (response.status === 200) {
+        const latestNovelties = response.payload;
+        setNovelties(latestNovelties.reverse());
+        setNoNews(latestNovelties.length === 0);
+      } else {
+        console.error("Failed to fetch novelties:", response.msg);
+      }
+    };
+
+    fetchNovelties();
   }, []);
 
-  if (isLoaded === null) {
-    return (
-      <>
-        <p>Novelties not found</p>
-      </>
-    );
-  }
-
-  if (!isLoaded) {
-    return (
-      <>
-        <p>Novelties are loading...</p>
-      </>
-    );
+  let noveltiesContent;
+  if (!noNews) {
+    noveltiesContent = novelties.map((novelty, index) => (
+      <div key={index} className="one-novelty">
+        <h2>{novelty.name}</h2>
+        <div className="author-and-date">
+          <p>Autor: {novelty.author}</p>
+          <p>Datum: {novelty.date}</p>
+        </div>
+        <div className="blog-content">
+          <p>
+            {novelty.content.substring(0, 400)}
+            {novelty.content.length > 400 ? "..." : ""}
+          </p>
+          <div className="blog-img">
+            <img src={novelty.img} alt="Novelty" />
+          </div>
+        </div>
+        <NoveltyLink _id={novelty._id} name={novelty.name}></NoveltyLink>
+      </div>
+    ));
   }
 
   return (
     <>
       <Header></Header>
+
       <section className="noveltyList-section">
         <div className="about">
           <div>
             <p className="noveltyList-title">Seznam Novinek:</p>
           </div>
           <div id="noveltyListContent">
-            {novelties.map((novelty, index) => (
-              <NoveltyLink key={index} {...novelty} />
-            ))}
+            {!noNews && <div className="novelties">{noveltiesContent}</div>}
+            {noNews && <p className="no-news">Žádné novinky ☹️</p>}
           </div>
         </div>
       </section>

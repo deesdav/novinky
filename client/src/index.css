@@ -10,6 +10,21 @@ body {
   background-color: rgb(255, 255, 255);
   margin: 0;
 }
+.bckBtn {
+  font-size: 27px;
+  text-decoration: none;
+  background-color: rgb(55, 55, 231);
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.bckBtn:hover {
+  background-color: rgb(24, 24, 238);
+  transform: scale(1.06);
+}
 .main-name {
   color: white;
   margin: 0;
