@@ -25,6 +25,28 @@ body {
   background-color: rgb(24, 24, 238);
   transform: scale(1.06);
 }
+.go-back-btn-place {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.go-back-btn {
+  color: white;
+  background-image: linear-gradient(-45deg, rgb(62, 99, 219), rgb(30, 20, 121));
+  width: fit-content;
+  padding: 15px 100px;
+  border-radius: 2px;
+  transition: 0.3s;
+  margin: -100px 0 100px 100px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+}
+.go-back-btn:hover {
+  padding: 15px 110px;
+  border-radius: 5px;
+  opacity: 90%;
+  color: rgb(197, 255, 255);
+}
 .main-name {
   color: white;
   margin: 0;
@@ -132,6 +154,7 @@ body {
   font-weight: 500;
   margin: 0;
 }
+
 @media (max-width: 1600px) {
   .spsmb-logo {
     width: 8%;
@@ -141,6 +164,11 @@ body {
   }
   .navigator {
     width: 50%;
+  }
+}
+@media (max-width: 1300px) {
+  .go-back-btn {
+    margin-top: 50px;
   }
 }
 @media (max-width: 800px) {
@@ -156,6 +184,13 @@ body {
   .btn-whole-novelty {
     font-size: 16px;
     margin: 20px auto;
+  }
+  .go-back-btn-place {
+    justify-content: center;
+  }
+  .go-back-btn {
+    margin: 0;
+    margin-bottom: 30px;
   }
 }
 @media (max-height: 400px) {

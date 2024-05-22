@@ -85,6 +85,7 @@
     font-size: 50px;
     color: red;
     font-weight: 500;
+    padding: 200px 0;
 }
 
 .blog-img {
@@ -137,20 +138,20 @@
     font-size: 15px;
     color: white;
     padding: 20px;
-    background-color: rgb(71, 71, 255);
+    background-image: linear-gradient(-45deg, rgb(62, 99, 219), rgb(30, 20, 121));
     max-width: 300px;
     text-align: center;
     transition: 0.3s;
-    border: 3px solid rgb(71, 71, 255);
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
 }
 
 .btn-all-novelties:hover {
     border-radius: 5px;
-    background-color: rgb(157, 157, 255);
-    border: 3px solid rgb(157, 157, 255);
     display: block;
     float: right;
+    opacity: 90%;
+    padding: 20px 30px;
 }
 
 .effect {

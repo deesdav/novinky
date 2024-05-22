@@ -2,8 +2,13 @@ import "./../pages/MainPage/MainPage.css"
 import newspaper_image from "./../img/newspaper_logo.png";
 import spsmb_logo from "./../img/spsmb_logo.png";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { useState } from "react";
  
 export default function Header(){
+
+    const location = useLocation();
+
     return (
         <>
           <section className="header">
@@ -11,6 +16,11 @@ export default function Header(){
             <p className="main-description">Nejnovější novinky Střední průmyslové školy Mladá Boleslav</p>
             <img src={newspaper_image} alt="newspaper" className="newspaper-logo" draggable="false" />
             <nav className="navigator">
+            {location.pathname !== "/" ? (
+                <Link to={"/"} className="no-underline">
+                    <p>Domů</p>
+                </Link>
+            ) : null}
             <Link to={"/novelties"} className="no-underline">
                 <p>Novinky</p>
             </Link>

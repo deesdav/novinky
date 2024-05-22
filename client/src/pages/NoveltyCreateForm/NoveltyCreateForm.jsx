@@ -3,13 +3,14 @@ import { useState } from "react";
 import { createNovelty } from "../../models/Novelty";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import BackButton from "../../components/BackButton";
 import "./NoveltyCreateForm.css";
 
 export default function NoveltyCreateForm() {
   const [formData, setFormData] = useState({
     name: "",
     content: "",
-    author: "",
+    author: "", 
     date: new Date().toISOString(),
     img: null,
   });
@@ -93,12 +94,12 @@ export default function NoveltyCreateForm() {
               />
               <button onClick={handlePost}>Vytvořit Novinku</button>
             </form>
-            <Link className="no-underline" to={"/"}>
-              <p className="bckBtn">Jít zpět</p>
-            </Link>
           </p>
         </div>
       </section>
+      <div className="go-back-btn-place">
+        <BackButton></BackButton>
+      </div>
       <Footer></Footer>
     </>
   );

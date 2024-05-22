@@ -3,7 +3,8 @@ import { getNovelty, deleteNovelty } from "../../models/Novelty";
 import { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import "./NoveltyView.css"
+import BackButton from "../../components/BackButton";
+import "./NoveltyView.css";
 
 export default function NoveltyView() {
   const { id } = useParams();
@@ -99,15 +100,14 @@ export default function NoveltyView() {
               <p>{info}</p>
             </form>
             <Link className="no-underline" to={`/updatenovelty/${id}`}>
-              <p className="bckBtn" >Upravit Novinku</p>
-            </Link>
-            <Link className="no-underline" to={"/"}>
-              <p className="bckBtn">Jít zpět</p>
+              <p className="bckBtn">Upravit Novinku</p>
             </Link>
           </p>
         </div>
       </section>
-
+      <div className="go-back-btn-place">
+        <BackButton></BackButton>
+      </div>
       <Footer></Footer>
     </>
   );

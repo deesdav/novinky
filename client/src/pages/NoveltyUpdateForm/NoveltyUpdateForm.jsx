@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { updateNovelty, getNovelty } from "../../models/Novelty";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import BackButton from "../../components/BackButton";
 import "./NoveltyUpdateForm.css";
 
 export default function NoveltyUpdateForm() {
@@ -119,12 +120,12 @@ export default function NoveltyUpdateForm() {
               />
               <button onClick={handlePost}>Upravit Novinku</button>
             </form>
-            <Link className="no-underline" to={"/"}>
-              <p className="bckBtn">Jít zpět</p>
-            </Link>
           </p>
         </div>
       </section>
+      <div className="go-back-btn-place">
+        <BackButton></BackButton>
+      </div>
       <Footer></Footer>
     </>
   );
