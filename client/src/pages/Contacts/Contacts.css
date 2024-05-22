@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 200px;
+  padding: 150px;
 }
 .contacts-us {
   font-size: 20px;
@@ -30,7 +30,24 @@
   .about {
     flex-direction: column;
   }
-  .contacts-us {
+  .contacts-section  {
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .contacts-title {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .contacts-us {
+    font-size: 20px;
+    width: fit-content;
   }
 }

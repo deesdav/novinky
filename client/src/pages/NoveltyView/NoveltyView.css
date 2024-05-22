@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 200px;
+  padding: 150px;
 }
 .noveltyView-us {
   font-size: 20px;
@@ -38,6 +38,26 @@
   .noveltyView {
     flex-direction: column;
   }
+  .noveltyView-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .noveltyView-title {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .noveltyView-us {
+    font-size: 20px;
+    width: fit-content;
+  }
   .noveltyView-title {
     text-align: center;
     width: 100%;
@@ -54,6 +74,10 @@
     margin: 10px auto;
     border-radius: 10px;
     width: 200px;
+    margin: 15px auto;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

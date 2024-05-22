@@ -11,7 +11,7 @@
     font-weight: 500;
     font-size: 30px;
     color: black;
-    padding: 2px 5px;
+    padding: 20px;
     background-color: white;
     max-width: 300px;
     text-align: center;
@@ -92,13 +92,14 @@
     overflow: hidden;
     font-size: 30px;
     border: 3px solid rgb(255, 255, 255);
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 200px;
     height: 200px;
     margin: 0 -100px -100px 0;
     border-radius: 10px;
     transition: 0.3s;
     cursor: pointer;
+    margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -107,8 +108,8 @@
 }
 
 .blog-img img {
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
 }
 
 .blog-content {
@@ -135,7 +136,7 @@
     font-weight: 500;
     font-size: 15px;
     color: white;
-    padding: 2px 5px;
+    padding: 20px;
     background-color: rgb(71, 71, 255);
     max-width: 300px;
     text-align: center;

@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 200px;
+  padding: 150px;
 }
 .noveltyCreate-us {
   font-size: 20px;
@@ -56,6 +56,15 @@ button:hover {
   .noveltyCreate {
     flex-direction: column;
   }
+  .noveltyCreate-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
   .noveltyCreate-title {
     text-align: center;
     width: 100%;
@@ -64,7 +73,8 @@ button:hover {
     margin-bottom: 20px;
   }
   .noveltyCreate-us {
-    width: 100%;
+    font-size: 20px;
+    width: fit-content;
   }
   textarea {
     background-color: rgb(0, 0, 0);

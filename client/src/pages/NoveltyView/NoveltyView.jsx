@@ -78,15 +78,15 @@ export default function NoveltyView() {
               {novelty.name}
             </p>
             <p>
-              <strong>Obsah:</strong>
+              <strong>Obsah: </strong>
               {novelty.content}
             </p>
             <p>
-              <strong> Autor:</strong> {novelty.author}
+              <strong>Autor: </strong> {novelty.author}
             </p>
             <p>
               {" "}
-              <strong>Datum vytvoření:</strong> {novelty.date}
+              <strong>Datum vytvoření: </strong> {novelty.date}
             </p>
             <img src={novelty.img} alt="Novelty" />
             <form>
@@ -95,7 +95,7 @@ export default function NoveltyView() {
                 placeholder={novelty.name}
                 onChange={handleChange}
               />
-              <button onClick={handleDelete}>Delete</button>
+              <button onClick={handleDelete}>Smazat</button>
               <p>{info}</p>
             </form>
             <Link className="no-underline" to={`/updatenovelty/${id}`}>

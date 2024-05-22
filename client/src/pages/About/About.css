@@ -30,6 +30,15 @@
   .about {
     flex-direction: column;
   }
+  .about-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
   .about-title {
     text-align: center;
     width: 100%;
