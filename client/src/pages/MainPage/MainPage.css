@@ -150,7 +150,7 @@
     border-radius: 5px;
     display: block;
     float: right;
-    opacity: 90%;
+    filter:contrast(130%);
     padding: 20px 30px;
 }
 

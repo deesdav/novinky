@@ -55,26 +55,6 @@ textarea:hover {
   color: rgb(0, 0, 0);
   border: 3px solid rgb(0, 0, 0);
 }
-button {
-  background-image: linear-gradient(-45deg, rgb(62, 99, 219), rgb(30, 20, 121));
-  color: rgb(255, 255, 255);
-  padding: 20px;
-  margin: 0 10px;
-  cursor: pointer;
-  width: 600px;
-  font-size: large;
-  border: 3px solid rgb(255, 255, 255);
-  transition: 0.5s;
-}
-button:hover {
-  background-image: linear-gradient(
-    -45deg,
-    rgb(255, 255, 255),
-    rgb(140, 140, 140)
-  );
-  color: rgb(0, 0, 0);
-  border: 3px solid rgb(0, 0, 0);
-}
 @media (max-width: 1300px) {
   .noveltyUpdate {
     flex-direction: column;

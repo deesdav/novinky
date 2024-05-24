@@ -92,7 +92,7 @@ export default function NoveltyCreateForm() {
                 required
                 onChange={handleImageChange}
               />
-              <button onClick={handlePost}>Vytvořit Novinku</button>
+              <button className="big-btn" onClick={handlePost}>Vytvořit Novinku</button>
             </form>
           </p>
         </div>

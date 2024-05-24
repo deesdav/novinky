@@ -96,7 +96,7 @@ export default function NoveltyView() {
                 placeholder={novelty.name}
                 onChange={handleChange}
               />
-              <button onClick={handleDelete}>Smazat</button>
+              <button onClick={handleDelete} className="big-btn">Smazat</button>
               <p>{info}</p>
             </form>
             <Link className="no-underline" to={`/updatenovelty/${id}`}>

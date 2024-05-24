@@ -118,7 +118,7 @@ export default function NoveltyUpdateForm() {
                 required
                 onChange={handleImageChange}
               />
-              <button onClick={handlePost}>Upravit Novinku</button>
+              <button className="big-btn" onClick={handlePost}>Upravit Novinku</button>
             </form>
           </p>
         </div>
