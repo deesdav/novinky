@@ -13,9 +13,9 @@ export default function Contacts() {
             <p className="contacts-title">Kontakty</p>
           </div>
           <p className="contacts-us">
-            Kontaktuj nás a MY ti odpovíme na veškeré tvé dotazy ohledně
-            Novinek!
-          </p>{" "}
+            Kontaktuj nás na <strong>novinkydatabase@gmail.com</strong> a my ti
+            odpovíme na veškeré tvé dotazy ohledně <strong>Novinek!</strong>
+          </p>
         </div>{" "}
       </section>{" "}
       <iframe

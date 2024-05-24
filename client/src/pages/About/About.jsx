@@ -14,11 +14,12 @@ export default function About() {
             <p className="about-title">O nás</p>
           </div>
           <p className="about-us">
-            Borci z průmyslovky, každou chvilku vydávají novinky, nejčastěji z
-            třídy třetího ročníku! Proč? Protože bagr, nevim. Vždy, když je
-            aktivní novinka, dozvíte se hned v úvodu. Rozhodli jsme se založit
-            novinky, protože nás baví dávat vám informace ohledně průběhu na
-            Střední Průmyslové škole Mladá Boleslav.
+            <strong>Borci z průmyslovky</strong>, každou chvilku vydávají
+            novinky, nejčastěji z třídy třetího ročníku! Proč? Protože bagr,
+            nevim. Vždy, když je aktivní novinka, dozvíte se hned v úvodu.
+            Rozhodli jsme se založit novinky, protože nás baví dávat vám
+            informace ohledně průběhu na 
+            <strong> Střední Průmyslové škole Mladá Boleslav</strong>.
           </p>
         </div>
       </section>
