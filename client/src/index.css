@@ -11,19 +11,23 @@ body {
   margin: 0;
 }
 .bckBtn {
-  font-size: 27px;
-  text-decoration: none;
-  background-color: rgb(55, 55, 231);
-  color: white;
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding: 10px;
+  background-color: rgb(24, 24, 238);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 10px auto;
+  cursor: pointer;
+  width: 600px;
+  font-size: large;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
   border-radius: 5px;
+  border: none;
+  text-align: center;
 }
 .bckBtn:hover {
-  background-color: rgb(24, 24, 238);
-  transform: scale(1.06);
+  filter: contrast(130%);
+  color: rgb(204, 204, 255);
+  border-radius: 2px;
 }
 .go-back-btn-place {
   width: 100%;
@@ -44,7 +48,7 @@ body {
 .go-back-btn:hover {
   padding: 15px 110px;
   border-radius: 5px;
-  filter:contrast(130%);
+  filter: contrast(130%);
   color: rgb(197, 255, 255);
 }
 .main-name {
@@ -165,11 +169,12 @@ body {
   transition: 0.5s;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
   border-radius: 5px;
-  border:none;
+  border: none;
 }
+
 .big-btn:hover {
-  filter:contrast(130%);
-  color:rgb(204, 204, 255);
+  filter: contrast(130%);
+  color: rgb(204, 204, 255);
   border-radius: 2px;
 }
 
@@ -209,6 +214,12 @@ body {
   .go-back-btn {
     margin: 0;
     margin-bottom: 30px;
+  }
+  .big-btn {
+    width: 300px;
+  } 
+  .bckBtn {
+    width: 300px;
   }
 }
 @media (max-height: 400px) {
