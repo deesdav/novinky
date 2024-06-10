@@ -9,8 +9,6 @@ Tento projekt je vytvořen týmem ve složení Švancoš, Buřič, Buřtoš. Jed
 - [Instalace](#instalace)
 - [Použití](#použití)
 - [Struktura Projektu](#struktura-projektu)
-- [Contributing](#contributing)
-- [Licence](#licence)
 
 ## Úvod
 
@@ -31,37 +29,30 @@ Pro spuštění projektu je potřeba mít nainstalovaný Node.js a MongoDB. Nás
 1. Klonujte repozitář:
 
     ```bash
-    git clone https://github.com/vaserepozitare/novinky-spsmb.git
-    cd novinky-spsmb
+    git clone https://github.com/deesdav/novinky.git
     ```
 
 2. Instalujte závislosti pro frontend i backend:
 
     ```bash
     cd client
-    npm install
+    npm install/i
     cd ../server
     npm install
     ```
 
-3. Spusťte MongoDB server:
-
-    ```bash
-    mongod
-    ```
-
-4. Spusťte backend server:
+3. Spusťte backend server:
 
     ```bash
     cd server
     npm start
     ```
 
-5. Spusťte frontend server:
+4. Spusťte frontend server:
 
     ```bash
     cd client
-    npm start
+    npm run dev
     ```
 
 ## Použití
@@ -70,15 +61,15 @@ Po dokončení instalace a spuštění serverů můžete aplikaci otevřít v pr
 
 ## Struktura Projektu
 
-novinky-spsmb/
-├── client/ # React frontend
-│ ├── public/
-│ └── src/
-├── server/ # Node.js + Express backend
-│ ├── models/
-│ ├── routes/
-│ └── controllers/
-└── README.md
+- novinky-spsmb/
+- ├── client/ # React frontend
+- │ ├── public/
+- │ └── src/
+- ├── server/ # Node.js + Express backend
+- │ ├── models/
+- │ ├── routes/
+- │ └── controllers/
+- └── README.md
 
 
 - `client/`: Obsahuje React aplikaci.
@@ -86,20 +77,6 @@ novinky-spsmb/
 - `models/`: Definuje MongoDB schémata.
 - `routes/`: Definuje API endpointy.
 - `controllers/`: Obsahuje logiku pro jednotlivé endpointy.
-
-## Contributing
-
-Pokud máte zájem přispět do projektu, prosím následujte tyto kroky:
-
-1. Forkněte tento repozitář.
-2. Vytvořte novou větev (`git checkout -b feature/nova-funkce`).
-3. Commitujte vaše změny (`git commit -am 'Přidání nové funkce'`).
-4. Pushněte větev (`git push origin feature/nova-funkce`).
-5. Vytvořte nový Pull Request.
-
-## Licence
-
-Tento projekt je licencován pod MIT licencí. Více informací naleznete v souboru LICENSE.
 
 ---
 
